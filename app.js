@@ -13,7 +13,7 @@ async function setupServer(){
             if(!fs.existsSync("./server")){
                 try{
                     await exec('mkdir server')
-                    await exec('wget -O server/minecraft_server.jar https://launcher.mojang.com/v1/objects/a412fd69db1f81db3f511c1463fd304675244077/server.jar');
+                    await exec('wget -O server/minecraft_server.jar https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar');
                     await setupJava()
                     await setupEULA()
                     resolve()
