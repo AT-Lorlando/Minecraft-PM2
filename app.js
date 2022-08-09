@@ -101,7 +101,7 @@ function startServer() {
         console.log("Starting Server on dev")
         
         log("Starting Server on dev")
-        return
+        return 
     }
     let server = spawn('java', [
         '-Xmx1024M',
@@ -154,7 +154,7 @@ function onCommand(req, res, server) {
 
 async function onStop(req, res, server) {
     if (!server) {
-        res.send('Server already stop').sendStatus(400);
+        res.send('Server already stop');
         return;
     }
     if(NODE_ENV_DEV){
